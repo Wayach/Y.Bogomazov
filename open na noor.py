@@ -20,11 +20,18 @@ else:
 #
 #
 #___13___
-x = int(input("Введите значение x: "))
-if x <= pi / 4:
-    print(f"y = sinx  y = {sin(x)}")
-else:
-    print(f"y = cosx  y = {cos(x)}")
+from math import *
+n, y = input('Введите знасение для x:'), 0
+
+if n.isdigit() == False:
+    print("Введенное не число не является удовлетворяющем")
+else: 
+    n = int(n)
+    if n <= pi / 4:
+        y == sin(n)
+    if n > pi / 4:
+        y = cos(n)
+    print(y)
 #
 #
 #___№14___
