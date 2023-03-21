@@ -1,0 +1,50 @@
+#1
+a = int(input())
+b = a // 10
+c = a % 10
+num = c*10 + b
+print(num)
+
+#2
+a = [float(input()), float(input())]
+b = [float(input()), float(input())]
+c = [float(input()), float(input())]
+
+Vab = [a[0] - b[0], a[1] - b[1]]
+Vac = [a[0] - c[0], a[1] - c[1]]
+Vbc = [b[0] - c[0], b[1] - c[1]]
+
+ab = (Vab[0]**2 + Vab[1]**2)**0.5
+ac = (Vac[0]**2 + Vac[1]**2)**0.5
+bc = (Vbc[0]**2 + Vbc[1]**2)**0.5
+
+P = ab + ac + bc
+p = P/2
+S = (p * (p - ab) * (p - ac) * (p - bc))**0.5
+print("P = ", P, "\n", "S = ", S
+
+#3
+a = int(input())
+b = a // 10
+c = a % 10
+print(b, "десятков", c,'единиц')
+
+#4
+m = int(input("Введите кол-во метров: "))
+print(m, "Метров", "В сантиметрах", m * 10**-2)
+print(m, "Метров", "В децмиметрах", m * 10**-1)
+print(m, "Метров", "В миллиметрах", m * 10**-3)
+\
+\
+\
+a, b, c = int(input("ВВедите см: ")), int(input("ВВедите дм:")), int(input("ВВедите мм: "))
+print(f"метров в см:{a / 100} метров в дм: {b / 10} метров в мм: {c / 1000}")
+
+#5
+x , k = int(input("x: ")), int(input("k:"))
+if k < x:
+  print(f"y = {k * x}")
+elif k == x:
+  print(f"y = {k / x}")
+else:
+  print(f"y = {k + x}")
