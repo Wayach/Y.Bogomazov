@@ -1,0 +1,28 @@
+#1
+a = int(input("1ое"))
+b = int(input("2ое"))
+c = int(input("предполагаемое"))
+if a + b == c:
+  print("верно")
+else:
+  print("неверно")
+#2
+a = int(input("1ое"))
+day = int(input("2ое"))
+a1 = a%10
+a3 = a//10//10
+a2 = a//10%10
+if a1 + a2 + a3 > day:
+  a = 0
+else:
+  print("не сломался")
+
+#3
+num1 = int(input("кол-во часов"))
+num2 = int(input("остаток по кредиту"))
+num3 = int(input('кол-во денег на еду'))
+zp = (200 * num1/ 2**3) + num1
+if zp => num2 + num3:
+  print("деньги есть")
+else:
+  print("надо батрачить")
