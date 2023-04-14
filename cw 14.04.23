@@ -1,0 +1,46 @@
+# 9
+num = 201
+while num % 17 !=0:
+  num += 1
+print(num)
+
+№ 10
+num = 600
+while num > 0:
+  if num % 28 == 0:
+    print("Макс число, кот нацело дел на 28 и не прев 600: ", num)
+    break
+  num -=1
+
+# 11
+d = 10
+day = 1
+while d <= 20:
+  d *=1.1
+  day += 1
+print("Лыжник пробежит более 20км на", day, "-й день")
+
+# 12
+a = 1
+total = 0
+n = int(input())
+while a<= n:
+  b = (2*a-1)/(2*a)
+  total +=b
+  a+=1
+print(round(total4))
+# 13
+n = int(input("Введите число n"))
+y = 1
+b = 0
+c = 1/ n
+while c< (1/y):
+  b += 1/y
+  y += 1
+print(b)
+
+# 14
+num = 11
+while num < 100:
+  print(num)
+  num += 11
