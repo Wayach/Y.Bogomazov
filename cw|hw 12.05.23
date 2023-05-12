@@ -1,0 +1,60 @@
+№1
+
+
+№2
+a = int(input("ВВедите целое число a: "))
+b = int(input("ВВедите целое число b: "))
+for i in range (a+1, b):
+    print(i)
+№3
+a = int(input("ВВедите целое число a: "))
+b = int(input("ВВедите целое число b: "))
+if a >= b:
+    print("Неверное значение")
+for i in range (b - 1, a, -1):
+    print(i)
+№4
+
+
+№5
+
+
+
+№6
+a = int(input("ВВедите целое число a: "))
+for i in range (1, a):
+    print(i)
+    
+№7
+a = 4
+sum = 0
+for n in range (1, 1000):
+    sum += 1/n
+    if sum > a:
+        break
+    print(n)
+
+
+
+№8
+n = int(input("ВВедите целое число a: "))
+for i in range (1, n):
+    if i**2 > n:
+        print("первое натуральное число, квадрат которого больше", n, ":", i)
+        
+
+
+№9
+n = int(input("ВВедите целое число a> 200: "))
+for num in range (n, n + 17):
+    if num % 17 == 0:
+        print(num)
+
+
+№10
+max_number = 0
+for num in range (1,601):
+    if num % 28 == 0:
+        max_number = num
+print("Максимальное число, которое нацело делится на 28 и не превышает 600 - это:", max_number)
+
