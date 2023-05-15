@@ -14,10 +14,20 @@ if a >= b:
 for i in range (b - 1, a, -1):
     print(i)
 №4
-
+n = int(input())
+for k in range(n):
+    if 3*k > n:
+        print(k, 3*k)
+        
 
 №5
-
+n = int(input())
+maxi = 0 
+for k in range (n):
+    if 3*k < n:
+        if maxi<k:
+            maxi = k
+print(maxi)
 
 
 №6
