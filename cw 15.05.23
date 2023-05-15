@@ -10,3 +10,41 @@ def schet ():
 c, d = schet ()
 e, f = schet ()
 z, x = schet ()
+
+
+
+
+
+
+
+def hello():
+    print("Привет")
+def bye():
+    print("Пока")
+def main():
+    print("это главная ветка программы")
+    print("вызов функции hello()")
+    hello()
+    pirnt("вызов функции bye()")
+    bye()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    def hello():
+    print("котлеты")
+def bye():
+    print("сосики")
+def main():
+    print("это главная ветка программы")
+    print("вызов функции hello()")
+    hello()
+    pirnt("вызов функции bye()")
+    bye()
