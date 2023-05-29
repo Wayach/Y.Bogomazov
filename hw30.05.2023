@@ -1,0 +1,10 @@
+prikol = input('Введите что-нибудь: ')
+numbers = input('Введите число: ')
+slova = input('Введите слово: ')
+def func1(num):    
+    n = num * 5
+    print(n)
+
+func1(prikol)
+func1(numbers)
+func1(slova)
