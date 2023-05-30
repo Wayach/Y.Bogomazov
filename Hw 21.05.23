@@ -1,25 +1,18 @@
-print("какое число от 1 до 10 я загадал?")
-a = int(input())
-while a != 7:
-    print("не то число")
-    a = int(input())
-print("верно")
+def zagadka(zag, otv):
+    verno_or_not = "Верно!"
+    print(zag)
+    otv_polz = input()
+    if otv_polz != otv:
+        verno_or_not = "Неверно!"
+    return verno_or_not
+    
+zagadka1 = "5 + 5 ="
+zagadka2 = "Как меня зовут? ответ(с большой буквы) Ответ:"
+zagadka3 = "Чё по кайфу? Ответ:"
+otvet1 = "10"
+otvet2 = "Юра"
+otvet3 = "помидоры"
 
-
-print("какого числа у меня день рождения?")
-b = int(input())
-while b != 31:
-    print("не то число")
-    b = int(input())
-print("верно")
-
-
-print("какая столица у Нидерландов?")
-c = input()
-while c != "Амстердам" and c != "амстердам":
-    print("другой город")
-    c = input()
-print("верно")
-
-
-
+print(zagadka(zagadka1, otvet1))
+print(zagadka(zagadka2, otvet2))
+print(zagadka(zagadka3, otvet3))
