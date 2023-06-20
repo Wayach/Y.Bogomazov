@@ -1,0 +1,39 @@
+Human Readable Time
+def make_readable(seconds):
+    h = seconds // 3600
+    m = (seconds - h * 3600) // 60
+    s = seconds - (h * 3600) - (m * 60)
+    return f"{h:0>2d}:{m:0>2d}:{s:0>2d}"
+
+(Ready for) Prime Time
+def prime(upper):
+    primes = []
+    for i in range(2, upper + 1):
+        for j in range(2, int(i ** 0.5) + 1):
+            if i%j == 0:
+                break
+        else:
+            primes.append(i)
+    return primes
+
+Perimeter of squares in a rectangle
+def perimeter(n):
+  a, b = 1, 2
+  while n:
+    a, b = b, a + b
+    n -= 1
+  return 4 * (b - 1)
+
+Extract the domain name from a URL
+def domain_name(url):
+    domain = url.replace("http://", '').replace("https://", '').replace('www.', "")
+    domain = domain.split('.')
+    return domain[0]
+
+Moving Zeros To The End
+def move_zeros(lst):
+    for k in lst:
+        if k == 0:
+            lst.append(0)
+            lst.remove(0)
+    return lst
