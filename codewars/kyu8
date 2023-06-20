@@ -1,0 +1,52 @@
+(Century From Year)
+def century(year):
+    if  year % 100 == 0:
+        return year // 100
+    else:
+        return year // 100+ 1
+print(century(1705))
+print(century(1900))
+print(century(1601))
+print(century(2000))
+
+
+
+(Reversed sequence)
+def reverse_seq(n):
+    return list(range(n,0,-1))
+    
+    
+    
+(Twice as old)
+def twice_as_old(dad_years_old, son_years_old):
+    if dad_years_old == 2* son_years_old:
+        return 0
+    elif dad_years_old < 2* son_years_old:
+        return 2* son_years_old - dad_years_old
+    else: 
+        return dad_years_old - 2*son_years_old
+
+
+(Calculate average)
+def find_average(array):
+    sum = 0;
+    total = len(array);
+    if total == 0:
+        return 0;
+    for num in array:
+        sum += num;
+    return sum / total;
+    
+
+
+(Is it a palindrome?)
+def is_palindrome(s):
+    s = ''.join(filter(str.isalnum, s)).lower()
+    return s == s[::-1]
+    
+    
+(Pillars)
+def pillars(num_pill, dist, width):
+    if num_pill == 1: 
+        return 0 
+    return (num_pill-2)*width + (dist*(num_pill-1)*100)
